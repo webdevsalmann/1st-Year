@@ -1,0 +1,118 @@
+
+
+
+header {
+    background: var(--clr-p-light);
+    /* height: 4rem; */
+    border-bottom: 1px solid var(--clr-gray-light);
+}
+
+header .nav-bar {
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+header ul {
+    height: 3rem;
+    list-style: none;
+}
+
+header .logo {
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit:cover;
+    border-radius: 5rem;
+}
+
+header ul li {
+    margin: 0 1rem;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--white);
+}
+header a:hover {
+    transform: scale(1.5);
+}
+
+header label {
+    position: relative;
+    height: 32px;
+    width: 64px;
+    cursor: pointer;
+}
+
+header label input {
+    position: relative;
+    z-index: 1;
+    appearance: none;
+}
+
+header label span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 80px;
+    transition: .5s;
+    border: 2px solid var(--theme-light-clr-p);
+    transition: .3s ease-in-out;
+}
+
+header span i {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 24px;
+    width: 24px;
+    border-radius: 1rem;
+    background: var(--clr-p);
+    transition: .3s ease-in-out;
+}
+
+header label span i::before,
+header label span i::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 5rem;
+    transition: .3s ease-in-out;
+}
+
+header label span i::before {
+    top: 4px;
+    left: 4px;
+    background: var(--theme-light-clr-p);
+    border-radius: 5rem;
+}
+
+header label span i::after {
+    top: 2px;
+    left: 2px;
+    background: transparent;
+    border: 2px dotted var(--theme-light-clr-p);
+}
+
+header input:checked~span {
+    visibility: visible;
+}
+
+header input:checked~span i {
+    background: var(--theme-light-clr-p);
+    left: 34px;
+}
+
+header input:checked~span i::before {
+    background: var(--clr-p);
+}
+
+header input:checked~span i::after {
+    background: var(--theme-light-clr-p);
+    border: transparent;
+}

@@ -1,0 +1,8 @@
+{
+    "json.format.keepLines": true,
+    "editor.tokenColorCustomizations": {
+        "comments": "#039717"
+    },
+    "liveServer.settings.port": 5501,
+    
+}

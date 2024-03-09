@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Item</title>
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Job Application Form</h1>
+        <div class="input-container">
+
+            <div class="input-box">
+                <input type="text" id="firstName" required>
+                <label class="placeholder-label" for="firstName">First Name</label>
+            </div>
+            <div class="input-box">
+                <input type="text" required>
+                <label class="placeholder-label" for="lastName">Last Name</label>
+            </div>
+            <div class="input-box">
+                <input type="text" required>
+                <label class="placeholder-label" for="email">Email</label>
+            </div>
+            <div class="input-box">
+                <!-- <label for="jobRole">Job Role</label> -->
+                <select name="jobRole" id="">
+                    <option value="select" selected disabled hidden>Select an Option</option>
+                    <option value="frontEnd">Frontend Developer</option>
+                    <option value="backEnd">Backend Developer</option>
+                    <option value="fullStack">FullStack Developer</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <textarea name="message" id="message" required></textarea>
+                <label class="placeholder-label" for="message">Message</label>
+            </div>
+            <div class="input-box">
+                <input type="text" required>
+                <label class="placeholder-label" for="cityName">City Name</label>
+            </div>
+            <div class="input-box">
+                <input type="text" id="pincode" required>
+                <label class="placeholder-label" for="pincode">Pincode</label>
+            </div>
+            <div class="input-box">
+                <input type="file" id="file-input-cv" accept="application/pdf" required>
+                <label for="file-input-cv" id="file-input-cv-label"><span data-cv-condition> Upload CV</span>
+                    <div id="file-list"></div>
+                </label>
+            </div>
+        </div>
+        <button class="btn btn-submit">Submit</button>
+
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

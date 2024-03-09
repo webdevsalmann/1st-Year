@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 1px 10px #000;
+}
+#nav-bar{
+    height: 4rem;
+    padding: 0 10%; 
+    display: flex;
+    align-items: center;
+}
+#nav-bar img{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+.nav-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-list{
+    display: flex;
+}
+.nav-list li{
+    padding: 0 1rem;
+    list-style: none;
+}
+.nav-list li a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+.nav-sign-up{
+    display: flex;
+}
+.btn{
+    cursor: pointer;
+    font-weight: 600;
+    padding: 5px;
+    height: 2rem;
+    width: 6rem;
+    text-align: center;
+}
+.nav-sign-up .sign-in{
+    margin:0 10px;
+    border: 2px solid #000;
+    border-radius: 30px;
+}
+.nav-sign-up .join-now{
+    background: #000;
+    color: #fff;
+    border-radius: 30px;
+}
+
+#container-ribbon .ribbon{
+    height: 2rem;
+    margin: 5rem 0 0 0;
+    padding: .4rem 0 0 8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #004a29;
+}
+
+
+#container-home{
+    height: 40rem;
+    display: flex;
+    justify-content: c;
+    background: #d4e9e2;
+}
+#container-home .home{
+    margin: auto 4rem;
+}
+.home .quote{
+    width: 17rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.home .join-now{
+    background: #004a29;
+    border-radius: 50px;
+    color: #fff;
+}
+.home p{
+    padding: 1.5rem 0;
+}
+.home p a{
+    color: #000;
+}
+
+
+
+#container-start{
+    height: 30rem;
+}
+#container-start .start{
+    width: 90%;
+    height: 25rem;
+    margin: 5rem auto;
+}
+.start p{
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+}
+h2{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.step-box-container{
+    display: flex;
+}
+.step-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100/3%;
+}
+.step-box .number{
+    margin: 1rem ;
+    padding: 8px;
+    font-size: 25px;
+    font-weight: 600;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    border: 2px solid #008248;
+    color: #008248;
+    border-radius: 50%;
+}
+.step-box .step{
+    margin: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+.step-box .step-detail{
+    padding: 1rem;
+    text-align: center;
+}
+.step-box .step-detail a{
+    color: #008248;
+}

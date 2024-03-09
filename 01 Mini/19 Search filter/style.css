@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body {
+    background: #FFFFFA;
+    display: flex;
+    justify-content: center;
+}
+
+.search-box {
+    position: relative;
+    top: 10rem;
+    width: 60%;
+}
+
+.search-bar {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    padding: .5rem 1rem;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #7b1ff3;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #202020;
+}
+.search-bar:focus-within{
+    border-radius: 8px 8px 0 0;
+}
+.input-search {
+    position: relative;
+    display: block;
+    padding: .5rem;
+    width: 100%;
+    background: #7b1ff3;
+    color: #F0EFF5;
+    font-size: 1rem;
+    line-height: 1rem;
+    border: none;
+    outline: none;
+    z-index: 2;
+}
+.btn-box{
+    /* background: blue; */
+    display: flex;
+    z-index: 3;
+}
+.btn {
+    /* background: red; */
+    width: 2rem;
+    height: 2rem;
+    color: #cecdd3;
+    border-radius: 2rem;
+    outline: 2px solid #cecdd3;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    display: grid;
+    place-items: center;
+    user-select: none;
+}
+.btn:hover{
+    color: #202020;
+}
+.btn-clear{
+    margin-right: 1rem;
+}
+
+
+
+
+#list{
+    background: #7b1ff3;
+    border-radius: 0 0 8px 8px;
+}
+#list .list-item {
+    /* display: none; */
+    margin-bottom: .1rem;
+    padding: .8rem 1rem;
+    color: #F0EFF5;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.2s ease-in-out;
+}
+#list .list-item:hover {
+    background: #00000012;
+}
+
+
+#list .list-item span {
+    display: block;
+    height: 1rem;
+    width: 1rem;
+}
+#list .list-item span::before {
+    content: "";
+    display: block;
+    height: .8rem;
+    width: .8rem;
+    border: 2px solid #e2e1e9;
+    border-right: 0;
+    border-bottom: 0;
+}
+#list .list-item span::after {
+    content: "";
+    position: relative;
+    top: -16px;
+    left: 6.5px;
+    transform: rotate(-45deg);
+    display: block;
+    height: 1.1rem;
+    width: 2px;
+    background: #e2e1e9;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* #list li:hover {
+    background: var(--pclr);
+    color: var(--tclr);
+    cursor: pointer;
+}
+
+#list li:active {
+    background-color: #e5e5e5;
+}
+
+ul {
+    background: var(--tclr);
+    color: var(--pclr);
+    max-height: 14.5rem;
+    overflow: scroll;
+}
+
+.list-item {
+    width: 100%;
+    padding: .5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-item>.write {
+    font-size: 1.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    text-align: center;
+    background: #a29f9f;
+}
+
+.list-item>.write:hover {
+    color: #202020;
+} */
+
+
+
+
+
+
+
+.search-bar-box {
+    position: relative;
+}
+
+.search-bar-box .btn-box {
+    position: relative;
+}
+
+
+
+
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.3s;
+}
+
+.ripple:hover {
+    background: var(--pclr) radial-gradient(circle, transparent 1%, var(--pclr) 1%) center/15000%;
+}
+
+.ripple:active {
+    background-color: #cdc9c2;
+    background-size: 100%;
+    transition: background 0s;
+}

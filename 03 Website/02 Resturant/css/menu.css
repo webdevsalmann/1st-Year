@@ -1,0 +1,137 @@
+/* ==================================
+Display Layout
+================================== */
+main {
+    display: grid;
+    grid-template-columns: 15rem auto;
+}
+
+section.menu{
+    margin-top: 4rem;
+} 
+h2 {
+    position: relative;
+    margin-top: 2rem;
+}
+
+h2::after {
+    content: "";
+    position: relative;
+    display: block;
+    height: .3rem;
+    width: 4rem;
+    background: var(--clr-s);
+}
+
+
+/* ==================================
+aside Tab Bar
+================================== */
+main aside {
+    /* background: var(--clr-s-light-extra); */
+    background: var(--clr-s);
+    height: calc(100vh - 4rem);
+    position: sticky;
+    top: 4rem;
+}
+
+aside nav {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+aside nav a {
+    --num: 1.5rem;
+    padding: 1rem 2rem;
+    width: 10rem;
+    text-align: center;
+    background: var(--clr-t);
+    /* border-radius: 0 var(--num) 0 var(--num); */
+    border-radius: var(--num);
+    cursor: pointer;
+    color: var(--clr-white);
+    text-decoration: none;
+    transition: all .3s ease-in;
+}
+aside nav a:hover{
+    --num: 1.5rem;
+    border-radius: 0 var(--num) 0 var(--num);
+}
+
+
+
+
+/* ==================================
+Display section
+================================== */
+section#starter,
+section#main-course,
+section#dessert,
+section#salad,
+section#drinks {
+    padding: 2rem;
+}
+.card-container{
+    margin-top: 1.5rem;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* gap: 2.5rem; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 2rem;
+}
+
+.card {
+    position: relative;
+    width: min(18.5rem, 20rem);
+    border: 1px solid var(--p-clr-gray);
+}
+
+.card .img-box {
+    position: relative;
+}
+
+.card .img-box img {
+    position: relative;
+    width: 100%;
+    height: min(18rem, 20rem);
+    object-fit: cover;    
+}
+
+/* .card .detail-box {
+} */
+
+.card .detail-box .text-box {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .detail-box .h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card .detail-box .price {
+    color: var(--clr-t);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card .detail-box .btn-box {
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem;
+    margin-top: 0;
+}
+
+.card .detail-box .btn {
+    padding: 8px 16px;
+}

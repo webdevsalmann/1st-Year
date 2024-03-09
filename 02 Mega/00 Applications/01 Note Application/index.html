@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Application</title>
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>This is a header</h1>
+    </header>
+
+<main>
+    <div class="create-card-container">
+        <div class="card">
+            <div class="card-heading">
+                <div class="note-title" id="note-title" aria-label="Title" tabindex="1" role="textbox" dir="ltr"  aria-multiline="true" contenteditable="true" data-placeholder="Title"></div>
+            </div>
+            <div class="card-body">
+                <div class="note-description" id="note-description" aria-label="Description" tabindex="2" role="textbox" dir="ltr"  aria-multiline="true" contenteditable="true" data-placeholder="Description"></div>
+            </div>
+            <div class="btn-box">
+                <button class="btn" id="btn-add">Add</button>
+            </div>
+        </div>
+    </div>
+    <div class="display-card-container" id="display-card-container">
+        
+    </div>
+</main>
+
+
+    <footer>
+        <h1>This is a footer</h1>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

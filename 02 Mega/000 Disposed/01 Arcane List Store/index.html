@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcane Link Store</title>
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  -->
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="./css/mobile-media.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/tab-media.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="latest.css">
+</head>
+
+<body>
+
+    <!-- ====================================================== Modal =================================== -->
+    <div id="modal-alert" class="modal-alert ">
+        <div class="modal-alert-content">
+            <div class="header">
+                <span>Confirmation Alert</span>
+                <button class="btn btn-modal-close" id="close-modal-alert-btn">&#10005;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-alert-text-box">
+                    <div id="modal-alert-text" class="modal-text">Some text in the Modal..</div>
+                </div>
+                <div class="btn-box">
+                    <button class="btn query-btn-modal" id="btn_modal-yes">Yes</button>
+                    <button class="btn query-btn-modal" id="btn_modal-no">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-subscription" class="modal-subscription">
+        <div class="modal-subscription-content">
+            <div class="header">
+                <span>Your Plan</span>
+                <button class="btn btn-modal-close" id="close-modal-subscription-btn">&#10005;</button>
+            </div>
+            <div class="modal-body">
+                <div class="plan-card basic">
+                    <div class="plan-name">Basic</div>
+                    <button class="btn btn-subscribe">Currently Activated</button>
+                    <div class="plan-detail">
+                        <li>
+                            <div class="img-box tick-img"><img src="./image/icon/check2-all.svg" alt=""></div>
+                            <span>Upto 3 Categorys
+                                <span class="img-box"><img src="./image/icon/info-circle.svg" alt=""></span>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="img-box tick-img"><img src="./image/icon/check2-all.svg" alt=""></div>
+                            <span>Upto 6 Sub Categorys
+                                <span class="img-box"><img src="./image/icon/info-circle.svg" alt=""></span>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="img-box tick-img"><img src="./image/icon/check2-all.svg" alt=""></div>
+                            <span>Upto 24 Cards
+                                <span class="img-box"><img src="./image/icon/info-circle.svg" alt=""></span>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="img-box tick-img"><img src="./image/icon/check2-all.svg" alt=""></div>
+                            <span>Data Vary Browser to Browser
+                                <span class="img-box"><img src="./image/icon/info-circle.svg" alt=""></span>
+                            </span>
+                        </li>
+                    </div>
+                </div>
+                <div class="plan-card standard">
+                    <div class="name-box">
+                        <div class="plan-name">Standard</div> <span class="price">$4/mo</span>
+                    </div>
+                    <button class="btn btn-subscribe">Get Started</button>
+                    <div class="plan-detail">
+                        <li>
+                            <div class="img-box tick-img"><img src="./image/icon/check2-all.svg" alt=""></div>
+                            <span>Unlimited Category
+                                <span class="img-box"><img src="./image/icon/info-circle.svg" alt=""></span>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="img-box tick-img"><img src="./image/icon/check2-all.svg" alt=""></div>
+                            <span>Unlimited Sub Categorys
+                                <span class="img-box"><img src="./image/icon/info-circle.svg" alt=""></span>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="img-box tick-img"><img src="./image/icon/check2-all.svg" alt=""></div>
+                            <span>Unlimited Cards
+                                <span class="img-box"><img src="./image/icon/info-circle.svg" alt=""></span>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="img-box tick-img"><img src="./image/icon/check2-all.svg" alt=""></div>
+                            <span>Data Vary Browser to Browser
+                                <span class="img-box"><img src="./image/icon/info-circle.svg" alt=""></span>
+                            </span>
+                        </li>
+                    </div>
+                </div>
+                <div class="plan-card premium">
+                    <div class="name-box">
+                        <div class="plan-name">Premium</div> <span class="price">$42/mo</span>
+                    </div>
+                    <button class="btn btn-subscribe">Access Premium Now</button>
+                    <div class="plan-detail">
+                        <li>
+                            <div class="img-box tick-img"><img src="./image/icon/check2-all.svg" alt=""></div>
+                            <span>Unlimited Category
+                                <span class="img-box"><img src="./image/icon/info-circle.svg" alt=""></span>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="img-box tick-img"><img src="./image/icon/check2-all.svg" alt=""></div>
+                            <span>Unlimited Sub Categorys
+                                <span class="img-box"><img src="./image/icon/info-circle.svg" alt=""></span>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="img-box tick-img"><img src="./image/icon/check2-all.svg" alt=""></div>
+                            <span>Unlimited Cards
+                                <span class="img-box"><img src="./image/icon/info-circle.svg" alt=""></span>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="img-box tick-img"><img src="./image/icon/check2-all.svg" alt=""></div>
+                            <span>Data Vary Browser to Browser
+                                <span class="img-box"><img src="./image/icon/info-circle.svg" alt=""></span>
+                            </span>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div class="modal-alert-text-box">
+                <div id="modal-alert-text" class="modal-text">Some text in the Modal..</div>
+            </div> -->
+            <!-- <div class="btn-box">
+                <button class="btn query-btn-modal" id="btn_modal-yes">Yes</button>
+                <button class="btn query-btn-modal" id="btn_modal-no">No</button>
+            </div> -->
+        </div>
+    </div>
+
+
+
+    <main id="interface">
+        <aside>
+            <div class="left-bar">
+                <div class="top">
+                    <div class="btn-editable editable">
+                        <input class="add-cat-input" type="text" name="" id="add-cat-input" placeholder="Add Category">
+                        <div id="add-cat-btn" class="flex-c-h">+</div>
+                    </div>
+                    <ul id="nav_btn-list">
+                        <li id="all" class="btn_category active-cat-btn">All</li>
+                        <!-- <li class="btn_category">All-2
+                        <div class="btn-box remove-cat-btn editable">
+                            <img src="./image/icon/x.svg" alt="">
+                        </div>
+                    </li>
+                    <div id="all-2" data-idv="45234523" class="sub-cat-box">
+                        <div class="btn-editable editable">
+                            <input class="add-sub-cat-input" type="text" name="" id="add-sub-cat-input"
+                            placeholder="Sub Category">
+                            <div id="add-sub-cat-btn" class="flex-c-h">+</div>
+                        </div>
+                        <li class="btn_sub-category"><span> Sub Cat 1</span>
+                            <div class="remove-sub-cat-btn editable">-</div>
+                        </li>
+                        <li class="btn_sub-category"><span> Sub Cat 2</span>
+                            <div class="remove-sub-cat-btn editable">-</div>
+                        </li>
+                    </div> -->
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <div id="btn-modal-subscription" class="bottom-box upgrade-premium-box">
+                        <img src="./image/icon/person.svg" alt="">
+                        <div class="name">Upgrade to Plus</div>
+                        <div class="badge">
+                            <span>PRO</span>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown-menu" data-dropdown-menu>
+                            <div class="btn-box">
+                                <li class="btn-toggle toggle-editable">
+                                    <span>Editable Mode</span>
+                                    <label>
+                                        <input id="editable-mode-btn" type="checkbox">
+                                        <span><i></i></span>
+                                    </label>
+                                </li>
+                                <li class="btn-toggle theme-mode">
+                                    <span>Change Mode</span>
+                                    <label>
+                                        <input id="theme-btn" type="checkbox">
+                                        <span><i></i></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <div class="img-box"><img src="./image/icon/share.svg" alt=""></div>
+                                    <span>Share Your List</span>
+                                </li>
+                                <li id="delete-data-btn">
+                                    <div class="img-box"><img src="./image/icon/trash3.svg" alt=""></div>
+                                    <span>Delete All</span>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="dropdown" data-dropdown> -->
+                    <div class="bottom-box profile-box" data-dropdown-btn>
+                        <img src="./logo-light-bg.png" alt="">
+                        <div class="name">Salman</div>
+                        <div class="more-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </aside>
+
+        <section>
+            <div class="container">
+                <header>
+                    <nav class="nav-bar flex-c-h">
+                        <div class="logo-box">
+                            <img id="logo" src="./image/logo/logo-dark.svg" alt="" class="logo">
+                        </div>
+                    </nav>
+                </header>
+                <div id="content-block">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="index.js"></script>
+    <script src="index-2.js"></script>
+    <script src="complete.js"></script>
+
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script>
+        AOS.init();
+    </script>  -->
+</body>
+
+</html>

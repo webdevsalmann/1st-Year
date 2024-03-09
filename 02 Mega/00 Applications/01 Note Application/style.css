@@ -1,0 +1,123 @@
+
+main{
+    min-height: 100vh;
+}
+
+
+/* =============================
+Common classes
+============================ */
+.card{
+    position: relative;
+    margin: 1rem;
+    height: fit-content;
+    background: var(--clr-s);
+    border-radius: 4px;
+}
+.card-heading{
+    position: relative;
+    padding: 1rem;
+    border-bottom: 1px solid #202;
+}
+.note-title:empty:not(:focus):before {
+    content: attr(data-placeholder);
+}
+.note-title{
+    position: relative;
+    font-size: 1.5rem;
+    outline: none;
+}
+.card-body{
+    position: relative;
+    padding: 1rem;
+    margin-bottom: .5rem;
+}
+.note-description{
+    position: relative;
+}
+.note-description:empty:not(:focus):before {
+    content: attr(data-placeholder);
+}
+.btn-box{
+    /* max-height: 0; */
+    
+    padding: 0 .5rem;
+    margin-bottom: .5rem;
+    float: right;
+    overflow: hidden;
+    transition: all .1s ease-in 0s;
+}
+.btn{
+    width: fit-content;
+    height: fit-content;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    background: var(--clr-p);
+    color: var(--p-clr-white);
+    opacity: 0;
+    transition: .2s ease-in;
+}
+/* .card:focus-within .btn-box{
+    max-height: 10rem;
+} */
+.card:hover .btn{
+    opacity: 1;
+}
+
+
+
+
+/* =============================
+create-card-container
+============================ */
+.create-card-container{
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #fff;
+    min-height: 15rem;
+}
+.create-card-container .card{
+    width: 25rem;
+}
+
+
+
+
+/* =============================
+display-card-container
+============================ */
+
+.display-card-container .card{
+    width: 23rem;
+}
+.display-card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header,
+footer{
+    padding: 1rem;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+header h1,
+footer h1{
+    text-align: center;
+    color: var(--p-clr-white);
+}

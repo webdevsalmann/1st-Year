@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #FEE2C5;
+}
+
+:root{
+    --pclr: #DDDDDD;
+    --sclr: #222831;
+    --tclr: #30475E;
+    --aclr: #FEE2C5;
+}
+
+body{
+    background: #DDDDDD;
+}
+
+
+header{
+    position: relative;
+}
+
+.navbar{
+    width: 100%;
+    position: relative;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #202020;
+    /* background: var(--sclr); */
+}
+.toggle-menu{
+    position: relative;
+}
+.logo-box{
+    position: relative;
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.ham-icon{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -0 2px 2px #00000050;
+    outline: none;
+}
+.ham-icon:hover,
+.ham-icon.active{
+    background: #30475E;
+}
+.ham-icon span{
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 1.7rem;
+    border-radius: 5px;
+    background: #FEE2C5;
+    /* background: var(--aclr); */
+    transition: .5s;
+}
+.ham-icon span:nth-child(1){
+    transform: translateY(-.6rem);
+}
+.ham-icon span:nth-child(3){
+    transform: translateY(.6rem);
+}
+.ham-icon.active span:nth-child(1){
+    transform: rotate(45deg);
+}
+.ham-icon.active span:nth-child(2){
+    width: 0;
+}
+.ham-icon.active span:nth-child(3){
+    transform: rotate(-225deg);
+}
+
+
+.logo{
+    position: relative;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+.search-bar{
+    margin: auto;
+    position: relative;
+}
+.search{
+    position: absolute;
+    left: 1rem;
+    color: #202020;
+    font-size: 2rem;
+    font-weight: bolder;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+.search-input{
+    height: 2.5rem;
+    width: 35rem;
+    border: none;
+    outline: none;
+    color: #202020;
+    padding: 0 3rem;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+.interface{
+    display: flex;
+}
+
+
+.sidebar{
+    position: relative;
+    padding: 1rem 0;
+    width: 4.5rem;
+    height: calc(100vh - 4rem);
+    background: #202020;
+    /* background: var(--sclr); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid #FEE2C5;
+    transition: .3s;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.list{
+    position: relative;
+}
+.list ul{
+    position: relative;   
+}
+.list ul a{
+    position: relative;
+    text-decoration: none;
+    color: #FEE2C5;
+}
+.list .list-item.active{
+    background: #30475E;
+}
+.list-item{
+    position: relative;
+    margin: .1rem .5rem;
+    padding: 1rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+}
+.list-item:hover{
+    color: #FEE2C5;
+    background: #30475E;
+}
+.list ul a .icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: .3s;
+    filter: invert(87%) sepia(8%) saturate(1002%) hue-rotate(336deg) brightness(105%) contrast(99%);
+    pointer-events: none;
+}
+.list ul a span{
+    pointer-events: none;
+}
+/* .list-item:hover .icon{
+    filter: invert(87%) sepia(8%) saturate(1002%) hue-rotate(336deg) brightness(105%) contrast(99%);
+} */
+.items{
+    position: relative;
+    margin-left: 1.6rem;
+    pointer-events: none;
+}
+
+
+.sidebar .profile-box{
+    margin: 0 1.2rem;
+    position: relative;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+}
+.profile-box .profile-img img{
+    position: relative;
+    height: 2rem;
+    border-radius: 4px;
+}
+.profile-box .profile-about{
+    position: relative;
+    margin-left: 1.5rem; 
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.profile-box h5{
+    color: #FFFFFA;
+}
+.profile-box p{
+    position: relative;
+    font-size: 12px;
+    color: #DDDDDD;
+}
+.profile-box .logout img{
+    position: relative;
+    top: 2px;
+    height: 1.5rem;
+    filter: invert(87%) sepia(8%) saturate(1002%) hue-rotate(336deg) brightness(105%) contrast(99%);
+}
+.profile-box .logout {
+    margin: 0 .5rem;
+    padding: .5rem;
+    border-radius: 4px;
+}
+.profile-box .logout:hover {
+    background: #30475E;
+}
+
+
+/* =================Hover and active mode function ================== */
+.sidebar:hover,
+.sidebar.active{
+    width: 16rem;
+}
+.sidebar:hover .list-item,
+.sidebar.active .list-item{
+    border-radius: 0 2rem 2rem 0;
+    margin: .1rem 0;
+}
+.sidebar .profile-box.active,
+.sidebar:hover .profile-box{
+    margin: 0 .8rem;
+}
+
+
+
+
+
+
+
+/* =================================Display-Section====================================== */
+.display-section{
+    width: calc(100vw - 4.5rem);
+    background: #DDDDDD;
+    transition: .3s;
+    color: #202020;
+    display: grid;
+    place-items: center;
+}
+.display-section h1{
+    color: #202020;
+    text-align: center;
+}
+.display-section.active{
+    width: calc(100vw - 16rem);
+}

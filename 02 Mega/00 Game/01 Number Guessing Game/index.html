@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="interface">
+        
+        <div class="left-bar sidebar">
+            <div class="level-heading">Choose your level</div>
+            <div class="level-box">
+                <li class="level" id="lev1">Level-1</li>
+                <li class="level" id="lev2">Level-2</li>
+                <li class="level" id="lev3">Level-3</li>
+                <li class="level" id="lev4">Level-4</li>
+                <li class="level" id="lev5">Level-5</li>
+                <li class="level" id="lev6">Level-6</li>
+                <li class="level" id="lev7">Level-7</li>
+                <li class="level" id="lev8">Level-8</li>
+                <li class="level" id="lev9">Level-9</li>
+                <li class="level" id="lev10">Level-10</li>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <span class="level-strip">Level - <span id="level-num">1</span></span>
+            <div class="heading">
+                <br>
+                Guess the Number Between 1- <span id="num-between">100</span>
+            </div>
+            <div class="inputfield">
+                <input id="guess" type="text" placeholder="Num">
+                <button id="my_btn" class="btn" onclick="play()">GUESS</button>
+                <!-- <button id="my_btn" class="btn" onclick="reset()">Reset</button> -->
+            </div>
+            <div class="guessed-output">
+                <!-- <p id="message1" class="msg">Number of guess :- 0</p> -->
+                <!-- <p id="message2" class="msg">Guessed number are :- none</p> -->
+                <p id="message3" class="msg"></p>
+            </div>
+        </div>
+
+
+        <div class="sidebar right-bar">
+            <div id="hint" class="hint">
+                <div class="level-heading right-heading">Just take a Hint</div>
+                <div id="inside-hint"></div>
+                <!-- <p id="message2" class="msg"></p> -->
+            </div>
+            <div id="guessed-num" class="guessed-num"> 
+                <div class="level-heading right-heading">Guessed Number was</div>
+                <div id="inside-guessed-num"></div>
+                <!-- <p id="message1" class="msg"></p> -->
+                <!-- <p id="message3" class="msg"></p> -->
+            </div>
+        </div>
+
+        
+    </div>
+
+    <!-- JS IS HERE -->
+    <script src="app.js"></script>
+</body>
+
+</html>

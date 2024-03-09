@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F0EEED;
+    flex-direction: column;
+}
+h1{
+    text-decoration: underline;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 50vh;
+    margin: 2rem;
+}
+
+#wheel {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    background: #332C39;
+    border-radius: 30rem;
+    overflow: hidden;
+    box-shadow: 0 0 0 3px #332C39,
+        0 0 0 15px #F0EEED,
+        0 0 0 18px #332C39;
+    transform-origin: center;
+}
+
+.block {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    transform-origin: bottom right;
+    transform: rotate(calc(45deg * var(--i)));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    color: #332C39;
+    clip-path: polygon(0 0, 57% 0, 100% 100%, 0 57%);
+}
+
+.block:nth-child(odd) {
+    background-image: radial-gradient(circle farthest-corner at 7.2% 13.6%,
+            rgba(37, 249, 245, 1) 0%,
+            rgba(8, 70, 218, 1) 90%);
+}
+
+.block:nth-child(even) {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%,
+            rgba(255, 209, 67, 1) 0%,
+            rgba(255, 145, 83, 1) 90%);
+}
+
+.block span {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 600;
+    transform: rotate(-45deg);
+}
+
+.btn {
+    position: relative;
+    background: #332C39;
+    color: #F0EEED;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    margin: 0 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+#modal {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 99;
+    background: #332c3959;
+    backdrop-filter: blur(2px);
+}
+
+.modal-box {
+    position: absolute;
+    min-width: 10rem;
+    margin: 0 1rem;
+    min-height: 10rem;
+    border-radius: 4px;
+    padding: 1rem;
+    background: #F0EEED;
+    text-align: center;
+    overflow: auto;
+}
+
+.modal-box p {
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+
+
+@media only screen and (max-width: 450px) {
+
+    .container {
+        height: 90vw;
+        width: 90vw;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagge Gallery Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="modal-box">
+        <div id="modal">
+            <span id="close-modal">&times;</span>
+            <div class="modal-content">
+                <a id="prev" class="slide_btn" onclick="prevSlide()">&#10094;</a>
+                <img id="modal-img" class="popup-img" src="./images/1.jpg" alt="">
+                <a id="next" class="slide_btn" onclick="nextSlide()">&#10095;</a>
+            </div>
+            <a id="download_btn" >&#x2913; Download </a>
+
+        </div>
+    </div>
+    
+    <h1>Image Gallery</h1>
+    <div id="container">
+        <img class="img gallery-img" onclick="openModal(this);"
+            src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&w=1000&q=80"
+            alt="">
+        <img class="img gallery-img" onclick="openModal(this);"
+            src="https://media.istockphoto.com/id/1277074078/photo/mug-of-coffee-on-table.jpg?b=1&s=170667a&w=0&k=20&c=_j9Pqob61Nx-e92EmYm8dVsd8XHW81ZbcQztNqcL350="
+            alt="">
+        <img class="img gallery-img" onclick="openModal(this);"
+            src="https://images.unsplash.com/photo-1483389127117-b6a2102724ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+            alt="">
+        <img class="img gallery-img" onclick="openModal(this);"
+            src="https://images.pexels.com/photos/10800490/pexels-photo-10800490.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt="">
+        <img class="img gallery-img" onclick="openModal(this);"
+            src="https://images.pexels.com/photos/14455734/pexels-photo-14455734.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt="">
+        <img class="img gallery-img" onclick="openModal(this);"
+            src="https://images.pexels.com/photos/5511168/pexels-photo-5511168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="">
+        <img class="img gallery-img" onclick="openModal(this);"
+            src="https://images.unsplash.com/photo-1501139083538-0139583c060f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGltZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+            alt="">
+        <img class="img gallery-img" onclick="openModal(this);"
+            src="https://media.istockphoto.com/id/1093110112/photo/picturesque-morning-in-plitvice-national-park-colorful-spring-scene-of-green-forest-with-pure.jpg?b=1&s=170667a&w=0&k=20&c=x6xAPpwGup_aUqJXUV66pw2Q-yQgBTklxsMDR93Dvbo="
+            alt="">
+        <img class="img gallery-img" onclick="openModal(this);"
+            src="https://images.pexels.com/photos/14598286/pexels-photo-14598286.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt="">
+        <img class="img gallery-img" onclick="openModal(this);"
+            src="https://media.istockphoto.com/id/1297349747/photo/hot-air-balloons-flying-over-the-botan-canyon-in-turkey.jpg?b=1&s=170667a&w=0&k=20&c=1oQ2rt0FfJFhOcOgJ8hoaXA5gY4225BA4RdOP1RRBz4="
+            alt="">
+        <img class="img gallery-img" onclick="openModal(this);"
+            src="https://images.unsplash.com/photo-1504714146340-959ca07e1f38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&w=1000&q=80"
+            alt="">
+        <img class="img gallery-img" onclick="openModal(this);"
+            src="https://images.unsplash.com/photo-1542553458-79a13aebfda6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
+            alt="">
+        <img class="img gallery-img" onclick="openModal(this);"
+            src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80"
+            alt="">
+        <img class="img gallery-img" onclick="openModal(this);"
+            src="https://images.pexels.com/photos/13444951/pexels-photo-13444951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="">
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

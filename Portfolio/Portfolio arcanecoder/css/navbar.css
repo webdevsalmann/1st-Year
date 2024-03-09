@@ -1,0 +1,179 @@
+header {
+    background: var(--clr-p);
+}
+
+header .nav-bar {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    height: 6rem;
+    justify-content: space-between;
+}
+
+header .logo-box{
+    position: relative;
+    height: 5rem;
+    width: 5rem;
+}
+
+header .logo {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+    border-radius: 5rem;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    margin: 0 1rem;
+    cursor: pointer;
+    font-family: var(--lora);
+}
+
+header ul li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--clr-s);
+    transition: .3s;
+}
+
+header ul li:hover::after {
+    width: 100%;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--text-balance);
+}
+
+
+/* -----------------------Setting Dropdown  */
+header .dropdown {
+    position: relative;
+}
+
+header .dropdown.active .link::after {
+    width: 100%;
+}
+
+header .dropdown-menu {
+    position: absolute;
+    top: calc(100% + .5rem);
+    left: 0;
+    border: 1px solid var(--clr-light);
+    background: var(--clr-p);
+    color: #000;
+    padding: 1rem;
+    border-radius: 4px;
+    transform: translateY(10px);
+    pointer-events: none;
+
+    box-shadow: 0 2px 5px 0 #00000009;
+    opacity: 0;
+    transition: all .3s;
+    /* z-index: 2; */
+}
+
+header .dropdown-menu::before {
+    content: "";
+    width: .5rem;
+    height: .5rem;
+    border-top: 1px solid var(--clr-light);
+    border-left: 1px solid var(--clr-light);
+    background: var(--clr-p);
+    transform: rotate(45deg);
+    transition: all .3s;
+    position: absolute;
+    top: -5px;
+    z-index: -1;
+}
+
+header .dropdown.active .link+.dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+
+/* -----------------------Theme Button  */
+header label {
+    position: relative;
+    display: block;
+    width: 64px;
+    height: 32px;
+    cursor: pointer;
+}
+
+header label input {
+    position: relative;
+    appearance: none;
+}
+
+header label span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    transition: .3s;
+    border: 2px solid var(--invert-clr-p);
+    transition: .3s ease-in-out;
+}
+
+header span i {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 24px;
+    width: 24px;
+    border-radius: 3rem;
+    background: var(--invert-clr-p);
+    transition: all .3s ease-in-out;
+}
+
+header label span i::before,
+header label span i::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 3rem;
+    transition: all .3s ease-in-out;
+}
+
+header label span i::before {
+    top: 6px;
+    left: 6px;
+    width: 12px;
+    height: 12px;
+    background: var(--clr-p-light);
+    border-radius: 3rem;
+}
+
+header label span i::after {
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    border: 2px dashed var(--clr-p);
+}
+
+header input:checked~span i {
+    left: 34px;
+}
+
+header input:checked~span i::after {
+    top: 2px;
+    left: 8px;
+    width: 14px;
+    height: 14px;
+    border: transparent;
+    background: var(--invert-clr-p);
+}

@@ -1,0 +1,49 @@
+header {
+    display: block;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.navbar {
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--clr-p);
+    border-bottom: 1px solid var(--clr-gray-dark);
+}
+
+.navbar li a img {
+    position: relative;
+    height: 2.5rem;
+}
+
+.navbar li {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+}
+.navbar li::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background: var(--clr-black);
+    transition: all .3s;
+}
+.navbar li:hover::after{
+    width: 100%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--clr-black);
+}
+
+.navbar a:nth-child(4) {
+    color: var(--clr-black);
+}

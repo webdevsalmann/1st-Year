@@ -1,0 +1,233 @@
+
+body {
+    background: var(--theme-dark-clr-p);
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(15rem, 17rem) 1fr minmax(20rem, 30rem);
+}
+
+/* ========================
+Common Classes
+======================== */
+
+
+
+
+
+/* ========================
+Aside Left-bar section Styling
+======================== */
+aside.leftbar{
+    /* background: var(--clr-p-light); */
+    background: var(--clr-p-shade1);
+    color: var(--clr-gray-light);
+    padding: .5rem 1rem;
+}
+.leftbar .create-layer-container{
+    display: flex ;
+    flex-direction: column;   
+}
+.leftbar .wrap{
+    border-radius: 4px;
+    margin-bottom: .5rem;
+    padding: .5rem;
+}
+.leftbar .layer-wrapper{
+    padding: 1rem;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--clr-p-shade2);
+    cursor: pointer;
+}
+.leftbar .layer-wrapper.is-active{
+    background: var(--clr-p-shade3);
+}
+.leftbar .remove{
+    background: 0;
+    color: var(--clr-white);
+}
+.leftbar .remove img{
+    height: 1rem;
+    filter: invert(70%);
+    object-fit: cover;
+}
+.leftbar .remove:hover img{
+    filter: invert(100%);
+}
+
+
+
+
+
+
+
+
+
+/* ========================
+Display section Styling
+======================== */
+section.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-white);
+}
+
+.display .box {
+    width: 100%;
+    height: 20rem;
+    border: 1px solid var(--clr-border);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display .frame{
+    position: absolute;
+    height: 5rem;
+    width: 10rem;
+    cursor: pointer;
+    border: 2px solid var(--clr-white);
+}
+.display .cb{
+    position: absolute;
+    appearance: none;
+    z-index: 1;
+}
+
+.display #layer-1{
+    position: inherit;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #3c7aff;
+    transition: .3s;
+}
+.display #layer-2{
+    width: 100%;
+    height: 100%;
+    background: #8a2924;
+    transition: .3s;
+}
+.display .cb:checked + #layer-1{
+    position: relative;
+    left: 100px;
+    background: #a3c0ff;
+}
+
+
+
+
+
+
+
+
+
+/* ========================
+Aside Right-bar section Styling
+======================== */
+.rightbar {
+    padding: 1rem;
+    height: 40rem;
+    background: var(--clr-p-light);
+    color: var(--clr-white);
+    overflow-y: scroll;
+}
+.rightbar .tab-content{
+    display: none;
+}
+.rightbar .tab-content.is-active{
+    display: block;
+}
+
+.rightbar .property-box {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    background: var(--clr-p-shade1);
+}
+
+.rightbar h3 {
+    margin-bottom: 1rem;
+}
+
+
+/* ===============================range-box */
+.rightbar .value-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightbar [type=range] {
+    width: 50%;
+}
+.rightbar [type=number] {
+    background: var(--clr-p-shade1);
+    color: var(--clr-gray-light);
+    width: 4rem;
+    padding: .3rem;
+}
+
+.rightbar .select{
+    padding: .3rem .6rem;
+}
+.rightbar .unit-select{
+    padding: .3rem .6rem;
+}
+
+/* .rightbar [type=number] {
+    background: #fff;
+    width: 4rem;
+    padding: .5rem;
+}
+
+.rightbar .unit {
+    background: #fff;
+    width: fit-content;
+    width: fit-content;
+    padding: .5rem;
+} */
+
+/* .check-box {
+	transform: scale(2);
+} */
+
+.rightbar .property-box .check-box input[type="checkbox"] {
+    position: relative;
+    appearance: none;
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+    background: #e9e9ed;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.rightbar .property-box .check-box input:checked[type="checkbox"] {
+    background: #5d90ff;
+}
+
+.rightbar .property-box .check-box  input[type="checkbox"]::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    outline: 2px solid #000;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.rightbar .property-box .check-box input:checked[type="checkbox"]::after {
+    left: 50%;
+}

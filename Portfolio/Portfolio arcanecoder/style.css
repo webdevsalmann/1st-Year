@@ -1,0 +1,267 @@
+body {
+    background: var(--clr-p);
+    color: var(--clr-white);
+    margin: auto;
+}
+
+section {
+    height: minmax(30rem, 40rem);
+}
+
+/* ===============================
+Common Classes
+=============================== */
+.btn{
+    position: relative;
+    width: fit-content;
+    padding: 1rem 2rem;
+    background: var(--clr-s);
+    color: var(--clr-black);
+}
+
+
+
+
+
+
+
+/* ===============================
+Styleing of hero section
+=============================== */
+.hero-container {
+    height: 30rem;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.hero-container .text-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.hero-container p {
+    width: 90%;
+    margin: 1rem 0;
+}
+
+.hero-container .profile-img-box{
+    display: grid;
+    place-items: center;
+}
+.hero-container img{
+    height: 15rem;
+}
+
+
+
+
+
+/* ===============================
+Styleing of Service section
+=============================== */
+.service .container {
+    position: relative;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service .service-card {
+    position: relative;
+    margin: 1rem;
+    padding: 2rem;
+    width: 30%;
+    background: var(--clr-p-light);
+    color: var(--clr-light);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: .3s ease;
+    box-shadow: #0000001f 0px 1px 3px, #0000003d 0px 1px 2px;
+}.service .service-card:hover {
+    /* background: var(--clr-s); */
+    transform: scale(1.08);
+    /* color: var(--clr-black); */
+    /* box-shadow: #32325d40 0px 50px 100px -20px, var(--clr-s) 0px 30px 60px -30px, #0a254059 0px -2px 6px 0px inset;    */
+    /* box-shadow: 0 10px 20px  var(--clr-s); */
+}.service .service-card:hover .service-icon-box {
+    outline: 1px solid var(--clr-black);
+}
+
+.service .container .service-icon-box {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 3rem;
+    background: var(--clr-s);
+    transition: .3s ease;
+}
+.service .container img {
+    width: 50%;
+    height: 50%;
+    filter: invert(var(--invert));
+    z-index: 2;
+}
+.service .service-name,
+.service .service-detail {
+    text-align: center;
+}
+.service .service-name {
+    color: var(--clr-p-accent);
+}
+.service .service-detail {
+    color: var(--text-balance);
+}
+.service .service-name {
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+Styleing of recent-project section
+=============================== */
+.recent-project .container {
+    position: relative;
+    margin: auto;
+    /* width: 80%; */
+}
+.recent-project .project-box{
+    position: relative;
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.recent-project .detail-box {
+    position: relative;
+    display: block;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}.recent-project .detail-box p {
+    margin: 1rem 0;
+}
+
+.recent-project .image-box{
+    position: relative;
+}.recent-project .container img {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+/* ===============================
+Styleing of Contact section
+=============================== */
+.contact .container {
+    position: relative;
+    display: flex;
+    padding: 0 2rem;
+    margin: 5rem 0;
+}
+
+.contact .detail-box {
+    position: relative;
+    width: 50%;
+    border-right: 1px solid var(--clr-border);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact .detail-box p {
+    margin: 1rem 0;
+}
+
+.contact .input-box {
+    padding: 0 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .input-shell {
+    display: block;
+    position: relative;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.contact .input-box .input-shell label {
+    position: relative;
+    display: block;
+    /* width: 100%; */
+    margin-bottom: .5rem;
+}
+
+.contact .input-box .input-shell input {
+    position: relative;
+    display: block;
+    width: 100%;
+    color: var(--clr-white);
+    font-size: 16px;
+    background: transparent;
+    border-bottom: 1px solid var(--clr-light);
+}
+
+.contact .input-box .input-shell textarea {
+    position: relative;
+    display: block;
+    width: 100%;
+    color: var(--clr-white);
+    font-size: 16px;
+    background: transparent;
+    border-bottom: 1px solid var(--clr-light);
+    height: fit-content;
+    resize: vertical;
+}
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+Styleing of Footer
+=============================== */
+footer {
+    border-top: 1px solid #fff;
+    /* padding: 1rem; */
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    color: var(--clr-white);
+}

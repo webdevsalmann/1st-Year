@@ -1,0 +1,352 @@
+main {
+    height: 100vh;
+    width: 100vw;
+}
+
+section {
+    margin: 4rem auto;
+    min-height: 30rem;
+    width: 100vw;
+}
+
+/* -----------------------------------------------Hero Section-------------------------------- */
+.hero {
+    padding: 7rem 0;
+    background: var(--clr-s);
+}
+
+.container {
+    width: var(--section-width);
+    margin: auto;
+    display: flex;
+}
+
+.hero-content {
+    padding-top: 6rem;
+    position: relative;
+    top: 20%;
+    width: 50%;
+}
+
+.restaurant-name img {
+    height: 5rem;
+}
+
+.about {
+    margin: 1rem 0;
+    /* color: #eeeeee; */
+    color: var(--clr-black);
+}
+
+.hero .img-box {
+    animation: rotate 180s ease infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+/* ===========================================
+About Section
+===================================== */
+section.about {
+    min-height: 0;
+    width: var(--section-width);
+    margin: auto;
+}
+
+.about h2 {
+    width: 80%;
+    margin: auto;
+    font-size: 2.5rem;
+    text-align: left;
+    color: var(--clr-black);
+}
+
+/* ===========================================
+Todays Special Combo Section
+===================================== */
+section.todays-special {
+    padding: 5rem 0;
+    background: var(--clr-s-light-ultra);
+}
+
+.salad-card-box {
+    position: relative;
+    width: var(--section-width);
+    margin: auto;
+}
+
+.salad-card-box .card {
+    position: relative;
+    /* margin: 1rem; */
+    /* width: 20rem; */
+    width: 100%;
+    height: 25rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.salad-card-box .card:nth-child(2) {
+    margin: 2rem;
+}
+
+
+.salad-card-box .card img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.food-detail {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    color: #FFF;
+    transition: all 0.3s ease-out;
+    background: linear-gradient();
+    /* background: linear-gradient(transparent 0%, var(--clr-t) 100%); */
+    /* background: linear-gradient(transparent 0%, #04291d 100%); */
+    background: linear-gradient(0deg, #000000b9 0%,#00000073 50%,#00000000 85%);
+}
+
+.food-detail>h4,
+.food-detail>p {
+    color: #ffffff;
+}
+
+section.todays-special .btn-box {
+    display: flex;
+    justify-content: center;
+}
+
+section.todays-special .btn-box .btn {
+    padding: 1rem 2rem;
+}
+
+
+
+
+/* ===========================================
+create Combo Section
+===================================== */
+.display-container {
+    width: var(--section-width);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.display-container .display-dish-box {
+    position: relative;
+    width: 45%;
+}
+.display-container .display-dish-box img {
+    position: relative;
+    width: 100%;
+    max-height: 23rem;
+    border-radius: 2rem;
+    border: 10px solid var(--clr-black);
+    object-fit: cover;
+}
+
+.display-container .salad-list-box {
+    position: relative;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.display-container .salad-list-box li {
+    background: var(--clr-s);
+    margin: 1rem 0;
+    border-radius: 5rem 0 0 5rem;
+    padding: 1rem;
+    list-style: none;
+    display: flex;
+}
+
+.display-container .salad-list-box img {
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+    border-radius: 5rem;
+    border: 1px solid var(--clr-black);
+}
+
+.display-container .salad-list-box .img-detail {
+    padding: 0 1rem;
+}
+
+
+section.combo .salad-list-box li .detail-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+section.combo .salad-list-box li .btn-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section.combo .salad-list-box li .btn-change {
+    opacity: 0;
+    transition: all .3s ease;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 4px 8px;
+    color: var(--p-clr-gray-dark);
+    height: fit-content;
+    align-self: baseline;
+}
+section.combo .salad-list-box li .btn-change:hover {
+    color: var(--clr-black);
+    transform: scale(1.3);
+    background: var(--clr-t);
+    color: var(--clr-white);
+}
+section.combo .salad-list-box li:hover .btn-change{
+    opacity: 1;
+}
+
+section.combo > .salad-list-box .btn-box {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+}
+
+section.combo .btn-box .btn {
+    padding: 1rem 2rem;
+}
+
+
+/* ===========================================
+Our Staffs
+===================================== */
+.staff .container {
+    width: var(--section-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.staff .container img {
+    height: 33rem;
+}
+
+.staff .container .detail-box {
+    width: 50%;
+    display: grid;
+    align-content: center;
+}
+
+
+
+
+
+
+
+
+/* =====================================
+Customer Review Section
+===================================== */
+/* section.review {} */
+
+.profile-img-container ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.profile-img-container li {
+    position: relative;
+    list-style: none;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.profile-img-container li.active::after {
+    --num: 1rem;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6rem;
+    left: calc(50% - 1rem);
+    width: 0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-top: 1rem solid var(--clr-s);
+}
+
+.profile-img-container img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial-container {
+    display: none;
+    width: calc(var(--section-width) - 20rem);
+    margin: auto;
+    padding: 2rem;
+    background: var(--clr-s-light);
+    border-radius: 1rem;
+}
+.testimonial-container.active {
+    display: block;
+}
+
+.testimonial-container .review {
+    color: #202020;
+    font-size: 1.7rem;
+}
+
+.customer-profile-box {
+    display: flex;
+    margin: 1rem 0 0 0;
+    justify-content: space-between;
+}
+
+.customer-profile-box .name {
+    color: #202020;
+}
+
+.customer-profile-box .stars {
+    color: #202020;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin-top: 5rem;
+    padding: 5rem;
+    border-top: 1px solid var(--clr-black);
+}
+
+footer h1 {
+    text-align: center;
+}

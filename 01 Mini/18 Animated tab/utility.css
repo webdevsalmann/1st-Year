@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+button,
+input,
+textarea {
+    outline: none;
+    border: none;
+}
+:root {
+    /* Google Fonts  */
+    --mont: 'Montserrat', sans-serif;
+    --lora: 'Lora', sans-serif;
+    --nunito: 'Nunito', sans-serif;
+    --sans: sans-serif;
+
+    /* Filter */
+    --invert: 0;
+    
+    /* permanent colour  */
+    --p-clr-white: #FFFFFA;
+    --p-clr-black: #02040F;
+    --p-clr-light: #F0EFF5;
+    --p-clr-dark: #202020;
+    --p-clr-gray: #AAAAAA;
+    --p-clr-gray-light: #DDDDDD;
+    --p-clr-gray-dark: #909090;
+
+    --clr-gray-shade1: #D9D9D9;
+    --clr-gray-shade2: #CDCDCD;
+    --clr-gray-shade3: #c3c2c2;
+    --clr-gray-shade4: #b7b7b7;
+    --clr-gray-shade5: #a5a5a5;
+    --clr-gray-shade6: #929191;
+    --clr-gray-shade7: #808080;
+    --clr-gray-shade8: #717171;
+    --clr-gray-shade9: #636363;
+    --clr-gray-shade10: #505050;
+
+    --p-clr-primary: #4D50F4;
+    --p-clr-primary-light: #8183F6;
+    --p-clr-safe: #36d94c;
+    --p-clr-safe-light: #9CF3A7;
+    --p-clr-denger: #DF303A;
+    --p-clr-denger-light: #ED8B90;
+    
+    --theme-light-clr-p: #FFFFFA;
+    --theme-light-clr-p-light: #FAFAFA;
+
+    --theme-dark-clr-p: #111827;
+    --theme-dark-clr-p-light: #1f2937;
+        
+    /* theme colour  */
+    --clr-white: #FFFFFA;
+    --clr-black: #02040F;
+    --clr-light: #F0EFF5;
+    --clr-dark: #202020;
+    --clr-gray-light: #DDDDDD;
+    --clr-gray-dark: #7F7F7F;
+    --clr-border: #dddddd83;
+    
+    --invert-clr-p: #FFFFFA;
+    --invert-clr-p-light: #FAFAFA;
+    
+    --clr-p: #111827;
+    --clr-p-light: #1f2937;
+    
+    /* For Dark  */
+    --clr-s: #1cd8b2;
+    --clr-s-light: #A1F0E1;
+    --clr-s-light-extra: #CEF6EF;
+    --clr-s-shade1: #7DF5DD;
+    --clr-s-shade2: #4DF3D2;
+    --clr-s-shade3: #00EABC;
+    --clr-s-shade4: #00C49E;
+    
+    
+    /* Other Colours  */
+    --clr: #2B323B;
+    --clr: #363F49;
+    --clr: #EF7B45;
+    --clr: #FFD369;
+    --clr: #9bffaa;
+    --clr: #2185D5;
+    --clr: #8040ff;
+    --clr: #D84727;
+    --clr: #002244;
+    --clr: #4E8098;
+    --clr: #FC7753;
+    --clr: #66D7D1;
+    --clr: #7008fa ;
+    --clr: #5decbc ;
+    
+}
+.light-theme {
+    /* Filter */
+    --invert: 100%;
+
+    /* Theme Color  */
+    --clr-white: #02040F;
+    --clr-black: #FFFFFA;
+    --clr-light: #202020;
+    --clr-dark: #F0EFF5;
+    --clr-gray-light: #7F7F7F;
+    --clr-gray-dark: #DDDDDD;
+    --clr-border: #DDDDDD;
+
+    --clr-p: #FFFFFA;
+    --clr-p-light: #FAFAFA;
+    
+    --invert-clr-p: #2B323B;
+    --invert-clr-p-light: #363F49;
+
+    --clr-s: #7b1ff3;
+    --clr-s-light: #C5A2F4;
+    --clr-s-light-extra: #DAC3F6;
+    --clr-s-shade1: #944DF2;
+    --clr-s-shade2: #7A1EF5;
+    --clr-s-shade3: #5402C2;
+    --clr-s-shade4: #3F0291;
+}
+
+
+
+/* ===============================
+Common Classes
+=============================== */
+.clr-s{
+    color: var(--clr-s);
+}
+
+/* ----------------------------Button  */
+.btn {
+    padding: 4px 8px;
+    border-radius: 4px;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+/* ----------------------------Button Animation */
+.btn-anmt {
+    border: 1px solid var(--clr-white);
+    z-index: 1;
+    transition: all 0.3s ease;
+}.btn-anmt:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: var(--clr-white);
+    z-index: -1;
+    transition: all 0.3s ease;
+}.btn-anmt:hover:after {
+    width: 100%;
+    left: 0;
+}.btn-anmt:active {
+    top: 4px;
+}
+
+/* ----------------------------Flex box */
+.flex-c-v {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}.flex-c-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ===============================
+Headings
+=============================== */
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+
+
+
+/* ===============================
+Styleing of section Heading
+=============================== */
+.section-heading {
+    text-align: center;
+    margin: 5rem auto;
+    font-family: var(--mont);
+}
+.box-heading{
+    font-family: var(--lora);
+}
+div, p{
+    font-family: var(--nunito);
+}
+
+
+/* ===============================
+Media Query 
+=============================== */
+@media only screen and (min-width: 1280px) {
+    body {width: 1280px;}
+} 
+/* @media only screen and (min-width: 1024px) {
+    body {width: 1024px;}
+}
+@media only screen and (min-width: 800px) {
+    body {width: 800px;}
+}
+@media only screen and (min-width: 768px) {
+    body {width: 768px;}
+}
+@media only screen and (min-width: 800px) {
+    body {width: 800px;}
+}
+@media only screen and (min-width: 768px) {
+    body {width: 768px;}
+}
+@media only screen and (min-width: 600px) {
+    body {width: 600px;}
+}
+@media only screen and (min-width: 480px) {
+    body {width: 480px;}
+}
+@media only screen and (min-width: 320px) {
+    body {width: 320px;}
+}  */

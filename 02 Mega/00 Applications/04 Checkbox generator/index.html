@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Generator</title>
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <aside class="leftbar">
+            <div class="create-layer-container">
+                <button class="add-layer wrap">Add Layer</button>
+
+                <div class="layer-wrapper wrap is-active" data-active-layer="#frame">
+                    <div class="layer">Frame</div>
+                    <!-- <button class="btn remove"><img src="./image/icon/x.svg" alt=""></button> -->
+                </div>
+
+                <div class="layer-wrapper wrap" data-active-layer="#display-layer-1">
+                    <div class="layer">Layer 1</div>
+                    <button class="btn remove"><img src="./image/icon/x.svg" alt=""></button>
+                </div>
+                <div class="layer-wrapper wrap" data-active-layer="#display-layer-2">
+                    <div class="layer">Layer 2</div>
+                    <button class="btn remove"><img src="./image/icon/x.svg" alt=""></button>
+                </div>
+                <div class="layer-wrapper wrap" data-active-layer="#display-layer-3">
+                    <div class="layer">Layer 3</div>
+                    <button class="btn remove"><img src="./image/icon/x.svg" alt=""></button>
+                </div>
+                <div class="layer-wrapper wrap" data-active-layer="#display-layer-4">
+                    <div class="layer">Layer 4</div>
+                    <button class="btn remove"><img src="./image/icon/x.svg" alt=""></button>
+                </div>
+                <div class="layer-wrapper wrap" data-active-layer="#display-layer-5">
+                    <div class="layer">Layer 5</div>
+                    <button class="btn remove"><img src="./image/icon/x.svg" alt=""></button>
+                </div>
+                <div class="layer-wrapper wrap" data-active-layer="#display-layer-6">
+                    <div class="layer">Layer 6</div>
+                    <button class="btn remove"><img src="./image/icon/x.svg" alt=""></button>
+                </div>
+            </div>
+        </aside>
+
+        <section class="display">
+            <div class="box">
+                <label class="frame" for="cb" data-frame>
+                    <input class="cb" id="cb" type="checkbox" />
+                    <div id="layer-1">
+                        <div id="layer-2">
+                            <div id="layer-3">
+                                <div id="layer-4">
+                                    <div id="layer-5">
+                                        <div id="layer-6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </section>
+
+        <aside class="rightbar">
+            <div class="container">
+
+                <div id="frame" class="tab-content is-active" data-tab-content>
+                    <h3>Frame</h3>
+                    <div class="property-box">
+                        <div class="value-box">
+                            <p>Position</p>
+                            <select class="select Position" data-frame-position-select
+                                data-position-select="frame-position">
+                                <option value="static" selected>static</option>
+                                <option value="relative">relative</option>
+                                <option value="absolute">absolute</option>
+                                <option value="fixed">fixed</option>
+                                <option value="sticky">sticky</option>
+                                <option value="inherit">inherit</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="property-box">
+                        <p>Width</p>
+                        <div class="value-box">
+                            <input type="range" value='200' min='20' max='200' data-frame-width-range />
+                            <input class="number-input" type="number" data-frame-width-input data-value="frame-width" />
+                            <select class="unit unit-select" data-frame-width-unit-select
+                                data-unit-select="frame-width">
+                                <option value="px" selected>px</option>
+                                <option value="em">em</option>
+                                <option value="rem">rem</option>
+                                <option value="%">%</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="property-box">
+                        <p>Height</p>
+                        <div class="value-box">
+                            <input type="range" value='100' min='10' max='200' data-frame-height-range />
+                            <input class="number-input" type="number" data-frame-height-input
+                                data-value="frame-height" />
+                            <select class="unit unit-select" data-frame-height-unit-select
+                                data-unit-select="frame-height">
+                                <option value="px" selected>px</option>
+                                <option value="em">em</option>
+                                <option value="rem">rem</option>
+                                <option value="%">%</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="property-box">
+                        <p>Border Radius</p>
+                        <div class="value-box">
+                            <input type="range" value='0' min='0' max='100' data-frame-border-radius-range />
+                            <input class="number-input" type="number" data-frame-border-radius-input
+                                data-value="frame-border-radius" />
+                            <select class="unit unit-select" data-frame-border-radius-unit-select
+                                data-unit-select="frame-border-radius">
+                                <option value="px" selected>px</option>
+                                <option value="em">em</option>
+                                <option value="rem">rem</option>
+                                <option value="%">%</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="display-layer-1" class="tab-content" data-tab-content>
+                    <h3>Layer 1</h3>
+                    <div class="property-box">
+                        <div class="value-box">
+                            <p>Position</p>
+                            <select class="select Position" data-layer1-position-select
+                                data-position-select="layer1-position">
+                                <option value="static" selected>static</option>
+                                <option value="relative">relative</option>
+                                <option value="absolute">absolute</option>
+                                <option value="fixed">fixed</option>
+                                <option value="sticky">sticky</option>
+                                <option value="inherit">inherit</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="property-box">
+                        <p>Top</p>
+                        <div class="value-box">
+                            <input type="range" value='0' min='-200' max='200' data-layer1-top-range />
+                            <input class="number-input" type="number" data-layer1-top-input data-value="layer1-top" />
+                            <select class="unit unit-select" data-layer1-top-unit-select data-unit-select="layer1-top">
+                                <option value="px" selected>px</option>
+                                <option value="em">em</option>
+                                <option value="rem">rem</option>
+                                <option value="%">%</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="property-box">
+                        <p>Left</p>
+                        <div class="value-box">
+                            <input type="range" value='0' min='-200' max='200' data-layer1-left-range />
+                            <input class="number-input" type="number" data-layer1-left-input data-value="layer1-left" />
+                            <select class="unit unit-select" data-layer1-left-unit-select
+                                data-unit-select="layer1-left">
+                                <option value="px" selected>px</option>
+                                <option value="em">em</option>
+                                <option value="rem">rem</option>
+                                <option value="%">%</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="property-box">
+                        <p>Width</p>
+                        <div class="value-box">
+                            <input type="range" value='96' min='20' max='200' data-layer1-width-range />
+                            <input class="number-input" type="number" data-layer1-width-input
+                                data-value="layer1-width" />
+                            <select class="unit unit-select" data-layer1-width-unit-select
+                                data-unit-select="layer1-width">
+                                <option value="px" selected>px</option>
+                                <option value="em">em</option>
+                                <option value="rem">rem</option>
+                                <option value="%">%</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="property-box">
+                        <p>Height</p>
+                        <div class="value-box">
+                            <input type="range" value='96' min='10' max='200' data-layer1-height-range />
+                            <input class="number-input" type="number" data-layer1-height-input
+                                data-value="layer1-height" />
+                            <select class="unit unit-select" data-layer1-height-unit-select
+                                data-unit-select="layer1-height">
+                                <option value="px" selected>px</option>
+                                <option value="em">em</option>
+                                <option value="rem">rem</option>
+                                <option value="%">%</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="property-box">
+                        <p>Border Radius</p>
+                        <div class="value-box">
+                            <input type="range" value='0' min='0' max='100' data-layer1-border-radius-range />
+                            <input class="number-input" type="number" data-layer1-border-radius-input
+                                data-value="layer1-border-radius" />
+                            <select class="unit unit-select" data-layer1-border-radius-unit-select
+                            data-unit-select="layer1-border-radius">
+                            <option value="px" selected>px</option>
+                            <option value="em">em</option>
+                                <option value="rem">rem</option>
+                                <option value="%">%</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- <div class="property-box">
+                        <div class="value-box">
+                            <p>Checkbox Checked</p>
+                            <div class="check-box">
+                                <input id="check-checked" type="checkbox" checked>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="property-box">
+                        <p>Checked Left</p>
+                        <div class="value-box">
+                            <input type="range" value='100' min='-200' max='200' data-layer1-left-checked-range />
+                            <input class="number-input" type="number" data-layer1-left-checked-input
+                                data-value="layer1-left-checked" />
+                            <select class="unit unit-select" data-layer1-left-checked-unit-select
+                                data-unit-select="layer1-left-checked">
+                                <option value="px" selected>px</option>
+                                <option value="em">em</option>
+                                <option value="rem">rem</option>
+                                <option value="%">%</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="display-layer-2" class="tab-content" data-tab-content>
+                    <h3>Layer 2</h3>
+                    <div class="property-box">
+                        <div class="value-box">
+                            <p>Position</p>
+                            <select class="select Position" data-layer2-position-select
+                            data-position-select="layer2-position">
+                                <option value="static" selected>static</option>
+                                <option value="relative">relative</option>
+                                <option value="absolute">absolute</option>
+                                <option value="fixed">fixed</option>
+                                <option value="sticky">sticky</option>
+                                <option value="inherit">inherit</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="property-box">
+                        <p>Top</p>
+                        <div class="value-box">
+                            <input type="range" value='0' min='-200' max='200' data-layer2-top-range />
+                            <input class="number-input" type="number" data-layer2-top-input data-value="layer2-top"/>
+                            <select class="unit unit-select" data-layer2-top-unit-select data-unit-select="layer2-top">
+                                <option value="px" selected>px</option>
+                                <option value="em">em</option>
+                                <option value="rem">rem</option>
+                                <option value="%">%</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="property-box">
+                        <p>Left</p>
+                        <div class="value-box">
+                            <input type="range" value='0' min='-200' max='200' data-layer2-left-range />
+                            <input class="number-input" type="number" data-layer2-left-input data-value="layer2-left"/>
+                            <select class="unit unit-select" data-layer2-left-unit-select data-unit-select="layer2-left">
+                                <option value="px" selected>px</option>
+                                <option value="em">em</option>
+                                <option value="rem">rem</option>
+                                <option value="%">%</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="property-box">
+                        <p>Width</p>
+                        <div class="value-box">
+                            <input type="range" value='50' min='20' max='200' data-layer2-width-range />
+                            <input class="number-input" type="number" data-layer2-width-input data-value="layer2-width"/>
+                            <select class="unit unit-select" data-layer2-width-unit-select data-unit-select="layer2-width">
+                                <option value="px" selected>px</option>
+                                <option value="em">em</option>
+                                <option value="rem">rem</option>
+                                <option value="%">%</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="property-box">
+                        <p>Height</p>
+                        <div class="value-box">
+                            <input type="range" value='48' min='10' max='200' data-layer2-height-range />
+                            <input class="number-input" type="number" data-layer2-height-input data-value="layer2-height"/>
+                            <select class="unit unit-select" data-layer2-height-unit-select data-unit-select="layer2-height">
+                                <option value="px" selected>px</option>
+                                <option value="em">em</option>
+                                <option value="rem">rem</option>
+                                <option value="%">%</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="property-box">
+                        <p>Border Radius</p>
+                        <div class="value-box">
+                            <input type="range" value='0' min='0' max='100' data-layer2-border-radius-range />
+                            <input class="number-input" type="number" data-layer2-border-radius-input data-value="layer2-border-radius"/>
+                            <select class="unit unit-select" data-layer2-border-radius-unit-select data-unit-select="layer2-border-radius">
+                                <option value="px" selected>px</option>
+                                <option value="em">em</option>
+                                <option value="rem">rem</option>
+                                <option value="%">%</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+    </main>
+
+    <script src="index.js"></script>
+    <script src="noChange.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant</title>
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <!-- <li><a href="index.html"><img src="./images/logo.svg" alt=""></a></li> -->
+            <li><a href="./pages/menu.html">Menu</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="./pages/reservation.html">Reservation</a></li>
+            <button class="btn btn-p btn-small">
+                <li href="#"> <span> Sign-up</span></li>
+            </button>
+        </div>
+    </header>
+    <!-- <main> -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="restaurant-name"><img src="./images/logo.svg" alt=""></div>
+                <p class="about">"From our kitchen to your table. Experience the taste of tradition and authenticity."
+                </p>
+                <button class="btn btn-p btn-large btn_reserve"> <span>Reserve Now</span></button>
+            </div>
+            <div class="img-box">
+                <img src="./images/fry-egg.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about">
+        <h2>We Try to Keep as <span class="clr-s"> Fresh & Healthy </span> as <br> possible by using <span
+                class="clr-s"> Local, Seasonal Ingredients.</span> <br> At the Same Time we Avoid to Use Artificial
+            Ingredients and Food Additives During Cooking Process. </h2>
+    </section>
+    <section class="todays-special">
+        <div class="section-heading-container">
+            <h1 class="section-heading">Today's Special Combo</h1>
+            <p>Our food is made from the freshest ingredients and the result is much better such with a freshlook and
+                ofcourse great taste gurantee. </p>
+        </div>
+        <div class="salad-card-box flex-c-h">
+            <div class="card">
+                <img src="./images/starter/half-boil.jpg" alt="">
+                <div class="food-detail">
+                    <h4>Strawberry Salad</h4>
+                    <p>A nice choped pine juice flavoured oion on top of strawberry </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/main/egg-curry.jpg" alt="">
+                <div class="food-detail">
+                    <h4>Strawberry Salad</h4>
+                    <p>A nice choped pine juice flavoured oion on top of strawberry </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/dessert/mango-juice.jpg" alt="">
+                <div class="food-detail">
+                    <h4>Strawberry Salad</h4>
+                    <p>A nice choped pine juice flavoured oion on top of strawberry </p>
+                </div>
+            </div>
+        </div>
+        <div class="btn-box">
+            <button class="btn btn-p"><span> Add to cart</span></button>
+        </div>
+
+    </section>
+
+
+    <section class="combo">
+        <div class="section-heading-container">
+            <h1 class="section-heading">Make your own <span class="clr-s"> Combo</span></h1>
+            <p>Our food is made from the freshest ingredients and the result is much better such with a freshlook and of
+                course great taste gurantee.</p>
+        </div>
+        <div class="display-container">
+            <div class="display-dish-box">
+                <img src="./images/main/afgani-pulav.jpg" data-display-dish alt="">
+            </div>
+            <div class="salad-list-box">
+                <li>
+                    <div class="img-box"> <img src="./images/starter/boiled-egg.jpg" alt="" data-appetizer-img></div>
+                    <div class="detail-box">
+                        <div class="img-detail">
+                            <h6>Appetizers</h4>
+                                <h4 data-appetizer-name>Boiled Egg</h4>
+                        </div>
+                        <div class="btn-box">
+                            <div class="btn-change btn-prev" data-appetizer-prev=""> &#x2191;</div>
+                            <div class="btn-change btn-next" data-appetizer-next>&#x2193;</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="img-box"> <img src="./images/main/afgani-pulav.jpg" data-main-img alt=""></div>
+                    <div class="detail-box">
+
+                        <div class="img-detail">
+                            <h6>Main course</h6>
+                            <h4 data-main-name>Afgani Pulav</h4>
+                        </div>
+                        <div class="btn-box">
+                            <div class="btn-change btn-prev" data-main-prev> &#x2191;</div>
+                            <div class="btn-change btn-next" data-main-next>&#x2193;</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="img-box"> <img src="./images/dessert/berry-pie.jpg" data-dessert-img alt=""></div>
+                    <div class="detail-box">
+
+                        <div class="img-detail">
+                            <h6>Dessert</h6>
+                            <h4 data-dessert-name>Berry Pie</h4>
+                        </div>
+                        <div class="btn-box">
+                            <div class="btn-change btn-prev" data-dessert-prev> &#x2191;</div>
+                            <div class="btn-change btn-next" data-dessert-next>&#x2193;</div>
+                        </div>
+                    </div>
+                </li>
+                <div class="btn-box">
+                    <button class="btn btn-p"><span> Add to cart</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="staff">
+        <div class="section-heading-container">
+            <h1 class="section-heading">Our <span class="clr-s">Staffs</span> Members</h1>
+        </div>
+        <div class="container">
+            <img src="./images/profile/chef.jpg" alt="">
+            <div class="detail-box">
+                <h3>Chef Sabir</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, a natus iste nisi, necessitatibus
+                    libero labore officia asperiores itaque mollitia modi repudiandae optio delectus laudantium dolor,
+                    debitis doloribus error cumque possimus unde ipsa sit minima architecto. Tenetur dolor recusandae
+                    consequuntur animi dolorum iste!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="review">
+        <div class="section-heading-container">
+            <h1 class="section-heading">What Our <span class="clr-s"> Happy Customer</span> Talk <span
+                    class="yellow">About Us</span></h1>
+        </div>
+
+        <div class="profile-img-container">
+            <ul>
+                <li data-tab-target="#person-1"><img src="./images/profile/5.jpg" alt=""></li>
+                <li class="active" data-tab-target="#person-2"><img src="./images/profile/6.jpg" alt=""></li>
+                <li data-tab-target="#person-3"><img src="./images/profile/7.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div id="person-1" class="testimonial-container">
+            <div class="review">
+                <h3>person1</h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores deserunt fugiat
+                maxime sit repellat quas voluptatibus aliquid pariatur omnis, aperiam ipsa accusantium in officia
+                excepturi. Reprehenderit sit culpa soluta eum sint voluptate error fugiat corrupti, cumque, nam,
+                accusamus quas nulla rem repudiandae suscipit. Laboriosam?
+            </div>
+            <div class="customer-profile-box">
+                <div class="name">Lorem Ipsum</div>
+                <div class="stars">S T A R S</div>
+            </div>
+        </div>
+        <div id="person-2" class="testimonial-container active">
+            <div class="review">
+                <h3>person2</h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores deserunt fugiat
+                maxime sit repellat quas voluptatibus aliquid pariatur omnis, aperiam ipsa accusantium in officia
+                excepturi. Reprehenderit sit culpa soluta eum sint voluptate error fugiat corrupti, cumque, nam,
+                accusamus quas nulla rem repudiandae suscipit. Laboriosam?
+            </div>
+            <div class="customer-profile-box">
+                <div class="name">Lorem Ipsum</div>
+                <div class="stars">S T A R S</div>
+            </div>
+        </div>
+        <div id="person-3" class="testimonial-container">
+            <div class="review">
+                <h3>person3</h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores deserunt fugiat
+                maxime sit repellat quas voluptatibus aliquid pariatur omnis, aperiam ipsa accusantium in officia
+                excepturi. Reprehenderit sit culpa soluta eum sint voluptate error fugiat corrupti, cumque, nam,
+                accusamus quas nulla rem repudiandae suscipit. Laboriosam?
+            </div>
+            <div class="customer-profile-box">
+                <div class="name">Lorem Ipsum</div>
+                <div class="stars">S T A R S</div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer>
+        <h1>Footer</h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nulla modi nobis dicta molestiae! Mollitia, at
+        nisi assumenda iure deserunt magni accusamus molestiae doloremque blanditiis veniam beatae quam minima, facilis
+        iste rem harum animi repellat natus, consectetur velit suscipit voluptatem! Optio consequatur quia minus
+        voluptates nulla pariatur minima adipisci reprehenderit ducimus eos explicabo ut est ipsum doloremque blanditiis
+        necessitatibus laborum voluptas dignissimos, aliquid, dolor nisi magnam? Quibusdam autem consequuntur possimus,
+        eum natus accusamus similique. Esse delectus ipsam pariatur fuga perferendis culpa sapiente exercitationem,
+        iste, vero obcaecati nobis laborum illo nostrum non eveniet soluta rem commodi eius incidunt laboriosam,
+        blanditiis voluptatum.
+    </footer>
+
+
+
+    <!-- </main> -->
+
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>

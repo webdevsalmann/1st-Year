@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button,
+input,
+textarea {
+    outline: none;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    /* Google Fonts  */
+    --mont: 'Montserrat', sans-serif;
+    --lora: 'Lora', sans-serif;
+    --kanit: 'Kanit', sans-serif;
+    --nunito: 'Nunito', sans-serif;
+    --sans: sans-serif;
+
+    /* Filter */
+    --invert: 0;
+
+    /* permanent colour  */
+    --p-clr-white: #FFFFFA;
+    --p-clr-black: #02040F;
+    --p-clr-light: #F0EFF5;
+    --p-clr-dark: #202020;
+    --p-clr-gray: #AAAAAA;
+    --p-clr-gray-light: #DDDDDD;
+    --p-clr-gray-dark: #909090;
+
+    --clr-gray-1: #F9FAfB;
+    --clr-gray-2: #F3F4F6;
+    --clr-gray-3: #E5E7EB;
+    --clr-gray-4: #D1D5DB;
+    --clr-gray-5: #9CA3AF;
+    --clr-gray-6: #6B7280;
+    --clr-gray-7: #4B5563;
+    --clr-gray-8: #374151;
+    --clr-gray-9: #1F2937;
+    --clr-gray-10: #111827;
+    --clr-gray-11: #030712;
+
+    --p-clr-primary: #4D50F4;
+    --p-clr-primary-light: #8183F6;
+    --p-clr-safe: #36d94c;
+    --p-clr-safe-light: #9CF3A7;
+    --p-clr-denger: #DF303A;
+    --p-clr-denger-light: #ED8B90;
+
+    --p-light-clr-p: #F6F6F6;
+    --p-light-clr-p-light: #E6EBED;
+    --p-light-clr-p-accent: #102834;
+
+    --p-dark-clr-p: #111827;
+    --p-dark-clr-p-light: #1F2937;
+    --p-dark-clr-p-accent: #D3F1FF;
+
+    /* theme colour  */
+    --clr-white: #FFFFFA;
+    --clr-black: #02040F;
+    --clr-light: #F0EFF5;
+    --clr-dark: #202020;
+    --clr-gray-light: #DDDDDD;
+    --clr-gray-dark: #7F7F7F;
+    --clr-border: #374151;
+    --text-balance: #9CA3AF;
+
+    --invert-clr-p: #F6F6F6;
+    --invert-clr-p-light: #E6EBED;
+    --invert-clr-p-accent: #102834;
+
+    --clr-p: #111827;
+    --clr-p-light: #1F2937;
+    --clr-p-accent: #D3F1FF;
+
+    /* For Dark  */
+    --clr-s: #1CD8B2;
+    --clr-s-light: #A1F0E1;
+    --clr-s-light-extra: #CEF6EF;
+    --clr-s-shade1: #7DF5DD;
+    --clr-s-shade2: #4DF3D2;
+    --clr-s-shade3: #00EABC;
+    --clr-s-shade4: #00C49E;
+
+}
+
+.light-theme {
+    /* Filter */
+    --invert: 100%;
+
+    /* Theme Color  */
+    --clr-white: #02040F;
+    --clr-black: #FFFFFA;
+    --clr-light: #202020;
+    --clr-dark: #F0EFF5;
+    --clr-gray-light: #7F7F7F;
+    --clr-gray-dark: #DDDDDD;
+    --text-balance: #374151;
+
+    --clr-p: #F6F6F6;
+    --clr-p-light: #E6EBED;
+    --clr-p-accent: #102834;
+
+    --invert-clr-p: #111827;
+    --invert-clr-p-light: #1F2937;
+    --invert-clr-p-accent: #D3F1FF;
+
+    --clr-s: #7b1ff3;
+    --clr-s-light: #C5A2F4;
+    --clr-s-light-extra: #DAC3F6;
+    --clr-s-shade1: #944DF2;
+    --clr-s-shade2: #7A1EF5;
+    --clr-s-shade3: #5402C2;
+    --clr-s-shade4: #3F0291;
+}
+
+
+
+/* ===============================
+Common Classes
+=============================== */
+.clr-s {
+    color: var(--clr-s);
+}
+
+/* ----------------------------Button  */
+.btn {
+    padding: 4px 8px;
+    border-radius: 4px;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+/* ----------------------------Button Animation */
+.btn-anmt {
+    border: 1px solid var(--clr-white);
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.btn-anmt:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: var(--clr-white);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.btn-anmt:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.btn-anmt:active {
+    top: 4px;
+}
+
+/* ----------------------------Flex box */
+.flex-c-v {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-c-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ===============================
+Headings
+=============================== */
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+
+
+
+/* ===============================
+Styleing of section Heading
+=============================== */
+.section-heading {
+    text-align: center;
+    margin: 5rem auto;
+    font-family: var(--mont);
+}
+
+.box-heading {
+    font-family: var(--lora);
+}
+
+div,
+p {
+    font-family: var(--kanit);
+}

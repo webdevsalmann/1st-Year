@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Tab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="tab-pointer-box">
+            <ul>
+                <span id="active-bg"></span>
+                <li class="active" data-tab-target="#home">Home</li>
+                <li data-tab-target="#about">About</li>
+                <li data-tab-target="#contact">Contact</li>
+                <li data-tab-target="#community">community</li>
+                <li data-tab-target="#variety">variety</li>
+                <li data-tab-target="#sign-in">sign in</li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <div id="home" class="active" data-tab-content>
+                <h1>Home</h1>
+                <p>This is home tab</p>
+            </div>
+            <div id="about" data-tab-content>
+                <h1>About</h1>
+                <p>This is About tab</p>
+            </div>
+            <div id="contact" data-tab-content>
+                <h1>Contact</h1>
+                <p>This is Contact tab</p>
+            </div>
+            <div id="community" data-tab-content>
+                <h1>community</h1>
+                <p>This is community tab</p>
+            </div>
+            <div id="variety" data-tab-content>
+                <h1>variety</h1>
+                <p>This is variety tab</p>
+            </div>
+            <div id="sign-in" data-tab-content>
+                <h1>sign-in</h1>
+                <p>This is sign-in</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

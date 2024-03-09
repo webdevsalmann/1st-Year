@@ -1,0 +1,55 @@
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--theme-light-clr-p);
+}
+
+.crousal {
+    position: relative;
+    top: 2rem;
+    width: 100vw;
+    overflow: hidden;
+    box-shadow: inset 100px 100px 100px #202020;
+}
+
+.btn-swipe{
+    position: absolute;
+    top: calc(50% - 5rem);
+    font-size: 8rem;
+    line-height: 7rem;
+    cursor: pointer;
+    user-select: none;
+    transition: all .3s;
+    z-index: 2;
+}
+.btn-swipe:hover{
+    transform: scale(1.2);
+}
+.btn-prev{
+    left: 1rem;
+}
+.btn-next{
+    right: 1rem;
+}
+
+.img-container {
+    position: relative;
+    display: flex;
+    transition: all .5s;
+}
+.img-box {
+    display: flex;
+}
+
+.img-box img {
+    height: 80vh;
+    width: 100vw;
+    object-fit: cover;
+}

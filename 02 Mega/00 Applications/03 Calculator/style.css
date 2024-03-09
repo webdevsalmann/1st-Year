@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #252525;
+    color: #fafafa;
+}
+
+#interface{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.calc-block{
+    position: relative;
+    display: grid;
+    grid-template-rows: 30% auto;
+}
+.output-section{
+    position: relative;
+    text-align: right;
+    height: 100%;
+    /* border: 1px solid #fff; */
+}
+.output-view{
+    background: transparent;
+    text-align: right;
+    outline: none;
+    border: none;
+    user-select: none;
+    pointer-events: none;
+    caret-color: transparent;
+    margin: 0 1rem;
+    position: absolute;
+    right: 0;
+    /* border: 1px solid #fff; */
+}
+.output-section .show-func{
+    bottom: 6rem;
+    color: #6b6b6b;
+    font-size: 1.5rem;
+}
+.output-section .output{
+    bottom: 2rem;
+    color: #fafafa;
+    font-size: 2.5rem;
+}
+
+.button-section{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.button-section .btn{
+    padding: 1.4rem;
+    text-align: center;
+    /* display: grid; */
+    /* place-items: center; */
+    background: #494949;
+    border-radius: 4px;
+    margin: 1px;
+    font-size: 1.3rem;
+    user-select: none;
+}
+.button-section .btn:hover{
+    background: #393939;
+}
+.button-section .func-btn{
+    background: #393939;    
+}
+.button-section .func-btn:hover{
+    background: #494949;
+}
+.button-section .equal-btn{
+    background: #61caff;
+    color: #252525;
+}
+.button-section .equal-btn:hover{
+    background: #50c5ff;
+}
+
+.history-block{
+    height: 100vh;
+    background: #1a1a1a;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    right: 0;
+    width: 100%;
+}
+.history-block .btn{
+    margin: 1rem 0;
+}
+
+
+/* .history-btn{
+
+}
+.memory-btn{
+
+} */
+

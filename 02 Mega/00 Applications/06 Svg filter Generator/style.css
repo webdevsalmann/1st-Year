@@ -1,0 +1,91 @@
+
+body{
+    background: var(--clr-p);
+    color: var(--clr-light);
+}
+
+
+header{
+    height: 4rem;
+    background: var(--clr-p-light);
+}
+.interface{
+    width: 100%;
+    display: flex;
+}
+
+.sample-box{
+    padding: 1rem;
+    width: 35%;
+}
+.sample-box img{
+    width: 100%;
+    height: 100%;
+}
+
+.detail-container{
+    position: relative;
+    width: 65%;
+    padding: 1rem;
+}
+.detail-container .heading{
+    font-size: 1.5rem;
+}
+.detail-container .input-box{
+    display: flex;
+    align-items: center;
+}
+.detail-container .input-box [type=color]{
+    height: 2.3rem;
+    width: 2rem;
+    margin-right: .5rem;
+}
+.detail-container .input-box [type=text]{
+    height: 2.3rem;
+    padding: 0 .5rem;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    margin-right: .5rem;
+}
+.detail-container .input-box button{
+    height: 2.3rem;
+    padding: 0 1rem;
+}
+
+.detail-container .code-box{
+    position: relative;
+    display: block;
+    margin-top: 1.5rem;
+    width: 80%;
+    border-radius: 8px 0 0 0;
+    border: 1px solid var(--clr-light);
+    overflow: hidden;
+}
+.detail-container .code-box> span{
+    position: relative;
+    display: block;
+    height: 1.5rem;
+    background: #9d9fff;
+    display: flex;
+    align-items: center;
+}
+.detail-container .code-box #btn-copy{
+    color: var(--clr-dark);
+    position: relative;
+    left: 90%;
+    cursor: pointer;
+    font-weight: bold;
+}
+.detail-container .code-box p{
+    padding: .5rem 1rem;
+}
+
+.detail-container #percent-loss{
+    margin-top: 1.5rem;
+}
+#sample-img{
+    filter:
+invert(255%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(1) contrast(1);
+
+
+}

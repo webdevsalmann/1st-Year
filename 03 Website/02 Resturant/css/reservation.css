@@ -1,0 +1,80 @@
+
+
+body{
+    position: relative;
+}
+
+/* ==============================
+Frame
+============================== */
+main{
+    width: 100%;
+}
+.frame{
+    padding: 1rem;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    /* background: var(--clr-s-light-extra); */
+    /* background: var(--clr-s); */
+}
+.frame > .container{
+    display: flex;
+}
+.frame h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+/* ==============================
+Frame left-box
+============================== */
+.frame .left-box{
+    width: 50%;
+    border-right: 1px solid var(--clr-black);    
+}
+
+.input-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--clr-black);
+    width: 80%;
+}
+
+.input-box label{
+    font-weight: bold;
+}
+
+.input-box .wrapper{
+    width: 60%;
+}
+/* ===============================           Inputs  */
+.input-box input{
+    position: relative;
+    background: transparent;
+}
+.input-box input[type=date],
+.input-box input[type=number],
+.input-box input[type=email],
+.input-box input[type=text]{
+    position: relative;
+    width: 100%;
+    /* border-bottom: 1px solid  var(--clr-black); */
+}
+
+
+
+
+
+
+
+
+
+/* ==============================
+Frame right-box
+============================== */
+.frame .right-box{
+    width: 50%;
+}

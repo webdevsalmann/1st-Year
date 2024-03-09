@@ -1,0 +1,238 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: var(--clr-black);
+    font-family: sans-serif;
+}
+button,
+input,
+textarea {
+    outline: none;
+    border: none;
+}
+/* button:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid var(--clr-s-light-extra);
+} */
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--clr-p);
+}
+
+:root {
+    /* Fluid Widths  */
+    --section-width: 70rem;
+
+
+    /* Google Fonts  */
+    --mont: 'Montserrat', sans-serif;
+    --lora: 'Lora', sans-serif;
+    --nunito: 'Nunito', sans-serif;
+    --sans: sans-serif;
+
+    /* Filter */
+    --invert: 0;
+    
+    /* permanent colour  */
+    --p-clr-white: #FFFFFA;
+    --p-clr-black: #02040F;
+    --p-clr-light: #F0EFF5;
+    --p-clr-dark: #202020;
+    --p-clr-gray: #AAAAAA;
+    --p-clr-gray-light: #DDDDDD;
+    --p-clr-gray-dark: #4d4d4d;
+
+    --p-clr-primary: #4D50F4;
+    --p-clr-primary-light: #8183F6;
+    --p-clr-safe: #2FC042;
+    --p-clr-safe-light: #9CF3A7;
+    --p-clr-denger: #DF303A;
+    --p-clr-denger-light: #ED8B90;
+    
+    --theme-light-clr-p: #FFFFFA;
+    --theme-light-clr-p-light: #FAFAFA;
+
+    --theme-dark-clr-p: #111827;
+    --theme-dark-clr-p-light: #1f2937;
+    
+    
+    /* theme colour  */
+    --clr-white: #FFFFFA;
+    --clr-black: #02040F;
+    --clr-light: #F0EFF5;
+    --clr-dark: #202020;
+    --clr-gray-light: #DDDDDD;
+    --clr-gray-dark: #7F7F7F;
+    --clr-border: #dddddd83;
+    
+    --invert-clr-p: #FFFFFA;
+    --invert-clr-p-light: #FAFAFA;
+    
+    --clr-p: #222831;
+    --clr-p-light: #393E46;
+    
+    --clr-p: #f4f0de;
+    --clr-p-light: #f9f7f0;
+    
+    
+    --clr-s: #ffb917;
+    --clr-s-light: #f2c969;
+    --clr-s-light-extra: #f0d390;
+    --clr-s-light-ultra: #ffecc1;
+    --clr-s-shade1: #7DF5DD;
+    --clr-s-shade2: #4DF3D2;
+    --clr-s-shade3: #00EABC;
+    --clr-s-shade4: #00C49E;
+    
+
+
+    --clr-t: #09583F;
+    --clr-t-light: #16b180;
+    --clr-t-light-extra: #58cfa9;
+    --clr-t-shade1: #7DF5DD;
+    --clr-t-shade2: #4DF3D2;
+    --clr-t-shade3: #00EABC;
+    --clr-t-shade4: #00C49E;
+    
+    
+    /* Other Colours  */
+    --clr: #2B323B;
+    --clr: #363F49;
+    --clr: #EF7B45;
+    --clr: #FFD369;
+    --clr: #9bffaa;
+    --clr: #2185D5;
+    --clr: #8040ff;
+    --clr: #D84727;
+    --clr: #002244;
+    --clr: #4E8098;
+    --clr: #FC7753;
+    --clr: #66D7D1;
+    --clr: #7008fa ;
+    --clr: #5decbc ;   
+}
+
+
+/* ===============================
+Common Classes
+=============================== */
+.clr-s{
+    color: var(--clr-s);
+}
+
+.flex-c-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-c-v {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========================Button  */
+.btn {
+    position: relative;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-p {
+    background: var(--clr-t);
+    color: var(--clr-white);
+    padding: 8px 16px;
+    overflow: hidden;
+}
+.btn-p::before,
+.btn-s::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background: var(--clr-black);
+    transition: all .3s ease-in;
+    z-index: 1;
+}
+.btn-p:hover::before,
+.btn-s:hover::before{
+    height: 100%;
+}
+.btn-p span,
+.btn-s span{
+    position: relative;
+    z-index: 2;
+}
+.btn-s span{
+    transition: all .3s ease-in;
+}
+.btn-s:hover span{
+    color: var(--clr-white);
+}
+
+.btn-s {
+    background: var(--clr-light);
+    color: var(--clr-t);
+    padding: 8px 16px;
+    overflow: hidden;
+    border: 1px solid var(--clr-t);
+}
+
+
+
+
+/* ================================
+Heading Container
+================================ */
+.section-heading-container{
+    width: 55%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section-heading{
+    font-size: 3rem;
+    color: var(--clr-black);
+}
+.section-heading + p{
+    margin: 2rem auto;
+    color: var(--clr-black);
+}
+
+/* ===============================
+Headings
+=============================== */
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
